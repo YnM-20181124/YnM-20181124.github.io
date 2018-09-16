@@ -193,17 +193,25 @@
 
 <div align="center" class="animate-box">
 
-<div style="font: 12px dotum,sans-serif; width: 320px; height: 232px; color: rgb(51, 51, 51); position: relative;"><div style="height: 200px;"><a href="http://map.daum.net/?urlX=500558&amp;urlY=1125565&amp;itemId=18211926&amp;q=%EC%A0%9C%EC%9D%B4%EA%B7%B8%EB%9E%9C%ED%95%98%EC%9A%B0%EC%8A%A4&amp;srcid=18211926&amp;map_type=TYPE_MAP&amp;from=roughmap" target="_blank"><img style="border: 1px solid rgb(204, 204, 204);" src="http://t1.daumcdn.net/roughmap/imgmap/441594b7c26ea1116f80a491fe2673959b40305715af5a93a92db08cbb53156b" class="map" height="198" width="318"></a></div><div><span style="border-left:1px solid rgb(219, 219, 219);border-right:1px solid rgb(219, 219, 219);border-bottom:1px solid rgb(219, 219, 219);box-sizing:border-box;box-sizing:border-box;background-color:rgb(255, 255, 255);position:absolute;left:0px;top:200px;width:320px;height:33px"></span>
-
-<span style="position:absolute;left:12px;top:209px"><img src="http://t1.daumcdn.net/localimg/localimages/07/2013/map/test/ico_road.gif"></span><a href="http://map.daum.net/?panoid=1094456064&pan=163.8&tilt=4.3&zoom=0&map_type=TYPE_MAP&map_attribute=ROADVIEW&q=%EC%A0%9C%EC%9D%B4%EA%B7%B8%EB%9E%9C%ED%95%98%EC%9A%B0%EC%8A%A4&urlX=500400&urlY=1125720&urlLevel=3" target="_blank" style="text-decoration: none;color: #333;font:normal normal 400 12px gulim,sans-serif;line-height:14px;position:absolute;left:27px;top:211px">로드뷰</a>
-
-<span style="display:none">&nbsp;</span><span style="position:absolute;left:76px;top:209px"><img src="http://t1.daumcdn.net/localimg/localimages/07/2013/map/test/ico_street.gif"></span><a href="http://map.daum.net/?map_type=TYPE_MAP&target=car&rt=%2C%2C500558%2C1125565&rt1=&rt2=%EC%A0%9C%EC%9D%B4%EA%B7%B8%EB%9E%9C%ED%95%98%EC%9A%B0%EC%8A%A4&rtIds=%2C18211926&rtTypes=%2CPLACE" target="_blank" style="text-decoration: none;color: #333;font:normal normal 400 12px gulim,sans-serif;line-height:14px;position:absolute;left:90px;top:211px">길찾기</a></div></div>
+<!-- * Daum 지도 - 지도퍼가기 -->
+<!-- 1. 지도 노드 -->
+<div id="daumRoughmapContainer1537115834668" class="root_daum_roughmap root_daum_roughmap_landing"></div>
 
 <!--
-	* Daum 지도 - 약도서비스
-	* 한 페이지 내에 약도를 2개 이상 넣을 경우에는
-	* 약도의 수 만큼 소스를 새로 생성, 삽입해야 합니다.
+	2. 설치 스크립트
+	* 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
 -->
+<script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+<!-- 3. 실행 스크립트 -->
+<script charset="UTF-8">
+	new daum.roughmap.Lander({
+		"timestamp" : "1537115834668",
+		"key" : "q2cw",
+		"mapWidth" : "320",
+		"mapHeight" : "232"
+	}).render();
+</script>
 
 <div style="padding-left:5px;padding-right:5px;padding-top:15px;padding-bottom:15px;">
 
